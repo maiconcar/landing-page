@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inboundcycle</title>
+
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container header">
+        <img src="public/images/inboundcycle-logo.png" />
+
+        <div>
+          <a
+            href="https://www.facebook.com/InboundCycle"
+            target="_blank"
+            title="Facebook de InboundCycle"
+            class="social-icons"
+          >
+            <img src="public/images/facebook.svg" />
+          </a>
+          <a
+            href="https://twitter.com/inboundcycle"
+            target="_blank"
+            title="twitter de InboundCycle"
+            class="social-icons twitter-icon"
+          >
+            <img src="public/images/twitter.svg" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/2387654"
+            target="_blank"
+            title="linkedin de InboundCycle"
+            class="social-icons linkedin-icon"
+          >
+            <img src="public/images/linkedin.svg" />
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Separator Image -->
+    <div class="divfrommid"></div>
+
+    <!-- main -->
+    <main class="container wrapper">
+      <section class="about">
+        <!-- Titles -->
+        <div class="titles">
+          <div>
+            <h1>
+              Lorem ipsum dolor sit amet elit consectetur adipiscing eu ipsum porttitor ligula donec
+            </h1>
+            <h2>
+              Lorem ipsum dolor sit amet consectetur adipiscing elit eu porttitor ligula donec
+            </h2>
+          </div>
+          <!-- Ebook -->
+          <img
+            src="public/images/ebook.png"
+            class="ebook"
+            alt="E-book de InboundCycle"
+            class="ebook"
+          />
+        </div>
+
+        <!-- Body text -->
+        <p>
+          Duis blandit tempor facilisis. Curabitur ipsum turpis, <a href="#">venenatis</a> et massa
+          id, congue dignissim nibh. Praesent vitae justo vel metus faucibus vehicula. Donec vitae
+          semper eros, et viverra leo. Quisque maximus semper mi, sit amet vehicula quam ultricies
+          eu. Nullam euismod orci sed erat blandit vulputate nec vitae arcu. Integer nec imperdiet
+          sem. Nullam a nibh rhoncus, tincidunt arcu eu, porta erat. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae semper eros, et viverra leo.
+        </p>
+
+        <div class="fillform">Rellena el formulario para descargar la guía <span>&rarr;</span></div>
+      </section>
+
+      <!-- Download form -->
+      <aside>
+        <form id="form">
+          <h3>Descargar e-book gratis</h3>
+          <fieldset>
+            <input type="text" name="name" placeholder="Nombre" class="input" />
+            <input type="text" name="surname" placeholder="Apellidos" class="input" />
+            <input type="email" name="email" placeholder="Email" class="input" />
+          </fieldset>
+          <fieldset class="checkbox-group">
+            <label class="checkbox">
+              <input type="checkbox" name="legal" />
+              Acepto la
+              <a href="#" title="Lea nuestra política de privacidad">política de privacidad</a>
+            </label>
+            <label class="checkbox">
+              <input type="checkbox" name="subscription" /> Suscríbeme al blog
+            </label>
+          </fieldset>
+          <button type="button" onclick="SubmitForm()">Descargar</button>
+        </form>
+      </aside>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer">
+        <img src="public/images/inboundcycle-logo-small.png" class="logotype" alt="InboundCycle" />
+
+        <nav class="footer-nav">
+          <a href="#" title="InboundCycle">InboundCycle &copy;</a>
+          <a href="#" title="nuestra política de privacidad">Política de Privacidad</a>
+          <a href="#" title="Lea el aviso legal">Aviso Legal</a>
+        </nav>
+      </div>
+    </footer>
+
+    <!-- modal -->
+    <div class="modal" id="modal">
+      <div class="modal-content">
+        <div class="content">¡Muchas gracias!</div>
+        <button class="close-button">Close</button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,305 @@
+:root {
+  --primary: #ed5902;
+  --secondary: #ececec;
+
+  --light: #dedede;
+  --text: #404040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+button {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px;
+  text-transform: uppercase;
+  color: white;
+  background-color: var(--primary);
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+header {
+  padding: 45px 0;
+  border-top: 5px solid var(--primary);
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-icons:hover {
+  opacity: 0.8;
+}
+
+.linkedin-icon img {
+  width: 19px;
+  height: 19px;
+  padding-bottom: 1px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.divfrommid {
+  width: 100%;
+  height: 130px;
+  background: url(../public/images/separator-image.jpg);
+  background-size: cover;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  margin: 32px auto 64px;
+  grid-column-gap: 64px;
+}
+
+.titles {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.titles h1 {
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.titles h2 {
+  margin-top: 64px;
+  color: #989898;
+}
+
+.ebook {
+  margin-top: -80px;
+}
+
+.about p {
+  color: var(--text);
+  margin: 32px 0;
+}
+
+.about p a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.about p a:hover {
+  opacity: 0.8;
+}
+
+.fillform {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-top: 48px;
+}
+
+aside {
+  padding: 24px;
+  background-color: var(--secondary);
+  height: 385px;
+  width: 320px;
+  margin: 16px auto;
+}
+
+form {
+  display: block;
+}
+
+fieldset {
+  border: none;
+}
+
+form h3 {
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.input {
+  width: 100%;
+  font-size: 16px;
+  height: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  outline: none;
+  border: 1px solid var(--light);
+  color: var(--text);
+}
+
+.input::placeholder {
+  font-size: 14px;
+  color: var(--light);
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkbox {
+  font-size: 14px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.checkbox a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.checkbox a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  background-color: #505051;
+  padding: 64px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer img {
+  height: 20px;
+}
+
+.footer-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-nav a + a {
+  border-left: 1px solid white;
+  height: 6px;
+  padding: 0 10px;
+}
+
+.footer-nav a:hover {
+  color: var(--primary);
+}
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.show {
+  display: flex;
+  animation: modal 1s;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.modal-content {
+  background-color: white;
+  width: 300px;
+  min-width: 200px;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.close-button {
+  width: 120px;
+}
+
+@media (max-width: 768px) {
+  .header,
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header img,
+  .footer img {
+    margin-bottom: 24px;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .titles {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .titles h2 {
+    margin-top: 24px;
+  }
+
+  .ebook {
+    margin: 32px 0 16px;
+    width: 85%;
+  }
+
+  .fillform span {
+    display: none;
+  }
+
+  aside {
+    margin-top: 32px;
+  }
+}
